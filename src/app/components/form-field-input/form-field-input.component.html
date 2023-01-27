@@ -1,0 +1,62 @@
+<h1>Inputs</h1>
+<form class="example-form">
+  <mat-form-field>
+    <mat-label>Name</mat-label>
+    <input
+      type="text"
+      matInput
+      [formControl]="nameFormControl"
+      placeholder="your name"
+      >
+      <mat-error *ngIf="nameFormControl.hasError('required')">
+        Name is <strong>required</strong>
+      </mat-error>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Email</mat-label>
+    <input
+      type="email"
+      matInput
+      [formControl]="emailFormControl"
+      placeholder="email@example.com">
+      <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+        Please enter a valid email address
+      </mat-error>
+      <mat-error *ngIf="emailFormControl.hasError('required')">
+        Email is <strong>required</strong>
+      </mat-error>
+  </mat-form-field>
+
+  <mat-form-field id="inputNickName">
+    <mat-label>Nick Name</mat-label>
+    <input
+      type="text"
+      matInput
+      name="inputNickName"
+      [(ngModel)]="value"
+    >
+    <button
+      *ngIf="value"
+      matSuffix
+      mat-icon-button
+      aria-label="Clear"
+      (click)="value = ''"
+    >
+      <mat-icon
+        matSuffix
+      >
+        close
+      </mat-icon>
+    </button>
+    <mat-icon
+      *ngIf="value == ''"
+      matSuffix
+    >
+      edit
+    </mat-icon>
+  </mat-form-field>
+  <button mat-fab color="primary">
+    <mat-icon>send</mat-icon>
+  </button>
+</form>

@@ -33,9 +33,17 @@
     <input
       type="text"
       matInput
+      maxlength="10"
       name="inputNickName"
+      #inNick
       [(ngModel)]="value"
     >
+    <mat-hint align="start">
+      Only {{ inNick.maxLength }} characters
+    </mat-hint>
+    <mat-hint align="end">
+      {{ inNick.value.length }}/{{ inNick.maxLength }}
+    </mat-hint>
     <button
       *ngIf="value"
       matSuffix

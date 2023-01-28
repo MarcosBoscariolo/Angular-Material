@@ -1,0 +1,14 @@
+.progress-container {
+  display: grid;
+  max-width: 640px;
+  margin: 40px auto;
+
+  .progress-content {
+    display: grid;
+    gap: 20px;
+  }
+}
+
+.p-6 {
+  padding: 6px;
+}

@@ -7,9 +7,9 @@
     display: grid;
     gap: 20px;
   }
-}
-
-.p-6 {
-  font-size: 1.80rem;
-  padding: 6px;
+  
+  .title {
+    font-size: 1.80rem;
+    font-weight: 500;
+  }
 }

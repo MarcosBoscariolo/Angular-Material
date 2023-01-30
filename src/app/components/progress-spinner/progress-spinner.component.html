@@ -1,4 +1,4 @@
-<h1 class="p-6">Progress Bar</h1>
+<h1 class="title">Progress Bar</h1>
 <div class="progress-container">
   <div class="progress-content">
     <mat-progress-bar [value]="loadingPercent" color="primary"></mat-progress-bar>
@@ -6,7 +6,8 @@
     <mat-progress-bar [value]="loadingPercent" color="warn"></mat-progress-bar>
   </div>
 </div>
-<h2 class="p-6">Loading - Waiting Case</h2>
+
+<h2 class="title">Loading - Waiting Case</h2>
 <div class="progress-container">
   <div class="progress-content">
     <mat-progress-bar 
@@ -15,5 +16,31 @@
       [mode]="mode"
     >
     </mat-progress-bar>
+  </div>
+</div>
+
+<h3 class="title">Buffer</h3>
+<div class="progress-container">
+  <div class="progress-content">
+    <mat-progress-bar
+      color="accent"
+      mode="buffer"
+      [value]="loadingValueBuffer"
+      [bufferValue]="bufferValue">
+    </mat-progress-bar>
+  </div>
+</div>
+
+<h3 class="title">Spinners</h3>
+<div class="progress-container">
+  <div class="progress-content">
+    <mat-spinner
+      color="primary">
+    </mat-spinner>
+    <mat-progress-spinner
+      color="warn"
+      [value]="loadingPercent"
+      >
+    </mat-progress-spinner>
   </div>
 </div>

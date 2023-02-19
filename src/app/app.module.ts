@@ -9,13 +9,15 @@ import { MaterialModule } from './material/material.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ProgressSpinnerComponent } from './components/progress-spinner/progress-spinner.component';
 import { TabsComponent } from './components/tabs/tabs.component';
+import { DatepickerComponent } from './components/datepicker/datepicker.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FormFieldInputComponent,
     ProgressSpinnerComponent,
-    TabsComponent
+    TabsComponent,
+    DatepickerComponent
   ],
   imports: [
     BrowserModule,

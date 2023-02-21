@@ -47,8 +47,4 @@ export class SnackbarComponent implements OnInit {
     });
   }
 
-  changes(value: any) {
-    console.log(value)
-  }
-
 }

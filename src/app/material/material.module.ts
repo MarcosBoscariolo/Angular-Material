@@ -12,6 +12,8 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule, MAT_DATE_LOCALE } from '@angular/material/core';
+import { MatSnackBarModule, MAT_SNACK_BAR_DEFAULT_OPTIONS } from '@angular/material/snack-bar';
+import { MatSelectModule } from '@angular/material/select';
 
 @NgModule({
   exports: [
@@ -26,7 +28,9 @@ import { MatNativeDateModule, MAT_DATE_LOCALE } from '@angular/material/core';
     MatProgressSpinnerModule,
     MatTabsModule,
     MatDatepickerModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    MatSnackBarModule,
+    MatSelectModule
   ],
   providers: [
     {
@@ -36,6 +40,9 @@ import { MatNativeDateModule, MAT_DATE_LOCALE } from '@angular/material/core';
     {
       provide: MAT_DATE_LOCALE,
       useValue: 'pt-br'
+    },
+    {
+      provide: MAT_SNACK_BAR_DEFAULT_OPTIONS, useValue: {duration: 2500}
     }
   ]
 })

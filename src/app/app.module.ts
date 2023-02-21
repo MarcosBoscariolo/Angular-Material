@@ -1,15 +1,17 @@
-import { FormFieldInputComponent } from './components/form-field-input/form-field-input.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ProgressSpinnerComponent } from './components/progress-spinner/progress-spinner.component';
 import { TabsComponent } from './components/tabs/tabs.component';
 import { DatepickerComponent } from './components/datepicker/datepicker.component';
+import { SnackbarComponent } from './components/snackbar/snackbar.component';
+import { FormFieldInputComponent } from './components/form-field-input/form-field-input.component';
+import { SnackbarMsnComponent } from './components/snackbar/snackbar-msn/snackbar-msn.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { DatepickerComponent } from './components/datepicker/datepicker.componen
     FormFieldInputComponent,
     ProgressSpinnerComponent,
     TabsComponent,
-    DatepickerComponent
+    DatepickerComponent,
+    SnackbarComponent,
+    SnackbarMsnComponent
   ],
   imports: [
     BrowserModule,

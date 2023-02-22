@@ -1,0 +1,10 @@
+<button
+  mat-raised-button
+  color="primary"
+  (click)="openDialog()"
+>
+  Framework
+  <mat-icon>star</mat-icon>
+</button>
+<br><br>
+<p *ngIf="message">{{ message }}</p>

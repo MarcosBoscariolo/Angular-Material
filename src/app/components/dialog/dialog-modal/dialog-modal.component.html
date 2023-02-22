@@ -1,0 +1,19 @@
+<mat-dialog-actions align="end">
+  <button
+    mat-button
+    [mat-dialog-close]="'Dialog closed from button'"
+    color="warn"
+  >
+    <mat-icon>close</mat-icon>
+  </button>
+</mat-dialog-actions>
+<h1 mat-dialog-title>{{ data.title }}</h1>
+<mat-dialog-content>
+  <p>{{ data.content }}</p>
+</mat-dialog-content>
+<!-- <button
+  mat-button
+  (click)="closeDialog()"
+>
+  <mat-icon>close</mat-icon>
+</button> -->

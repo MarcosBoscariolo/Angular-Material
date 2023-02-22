@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { DatatableComponent } from './components/datatable/datatable.component';
 import { DatepickerComponent } from './components/datepicker/datepicker.component';
 import { DialogComponent } from './components/dialog/dialog.component';
 import { FormFieldInputComponent } from './components/form-field-input/form-field-input.component';
@@ -13,7 +14,8 @@ const routes: Routes = [
   { path: 'tabs', component: TabsComponent },
   { path: 'datepicker', component: DatepickerComponent },
   { path: 'snackbar', component: SnackbarComponent },
-  { path: 'dialog', component: DialogComponent }
+  { path: 'dialog', component: DialogComponent },
+  { path: 'datatable', component: DatatableComponent }
 ];
 
 @NgModule({

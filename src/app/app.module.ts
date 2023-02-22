@@ -14,6 +14,7 @@ import { FormFieldInputComponent } from './components/form-field-input/form-fiel
 import { SnackbarMsnComponent } from './components/snackbar/snackbar-msn/snackbar-msn.component';
 import { DialogComponent } from './components/dialog/dialog.component';
 import { DialogModalComponent } from './components/dialog/dialog-modal/dialog-modal.component';
+import { DatatableComponent } from './components/datatable/datatable.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { DialogModalComponent } from './components/dialog/dialog-modal/dialog-mo
     SnackbarComponent,
     SnackbarMsnComponent,
     DialogComponent,
-    DialogModalComponent
+    DialogModalComponent,
+    DatatableComponent
   ],
   imports: [
     BrowserModule,
